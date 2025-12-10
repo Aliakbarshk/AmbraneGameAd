@@ -1,0 +1,5 @@
+{
+  "name": "Ambrane Beat Catcher",
+  "description": "A dynamic rhythm mini-game where you catch musical notes floating out of an Ambrane speaker while avoiding distortion glitches.",
+  "requestFramePermissions": []
+}

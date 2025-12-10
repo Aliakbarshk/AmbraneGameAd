@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ambrane Beat Catcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+      
+      body {
+        font-family: 'Outfit', sans-serif;
+        overflow: hidden; /* Prevent scrolling during play */
+        touch-action: none; /* Prevent zoom/scroll gestures */
+        background-color: #000;
+      }
+
+      /* 3D Utilities */
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      
+      .backface-visible {
+        backface-visibility: visible;
+      }
+
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+
+      /* Animations */
+      @keyframes floatUp {
+        0% { transform: translateY(0) scale(0.5); opacity: 0; }
+        10% { opacity: 1; }
+        100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
